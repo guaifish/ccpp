@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/guaifish/ccpp"><img src="./img/ccpp-logo.png" alt="ccpp"></a>
+  <a href="https://github.com/guaifish/ccpp"><img src="https://github.com/guaifish/ccpp/blob/master/img/ccpp-logo.png" alt="ccpp"></a>
 </p>
 <p align="center">
     <em>Cookiecutter template for Python package</em>
@@ -43,10 +43,41 @@ $ pip install ccpp
 $ ccpp new hello-world && cd hello-world
 ```
 
-### test the package at the first time
+### Test the package at the first time
 
 ```console
 $ pytest tests
+```
+
+### Building package
+
+```console
+$ poetry build
+
+Building hello-world (0.1.0)
+ - Building sdist
+ - Built hello-world-0.1.0.tar.gz
+
+ - Building wheel
+ - Built hello-world-0.1.0-py3-none-any.whl
+```
+
+### Publishing package to PyPI
+
+```console
+$ poetry publish
+
+Publishing hello-world (0.1.0) to PyPI
+Username: guaifish
+Password:
+ - Uploading hello-world-0.1.0-py3-none-any.whl 0%
+ - Uploading hello-world-0.1.0-py3-none-any.whl 65%
+ - Uploading hello-world-0.1.0-py3-none-any.whl 100%
+ - Uploading hello-world-0.1.0-py3-none-any.whl 100%
+ - Uploading hello-world-0.1.0.tar.gz 0%
+ - Uploading hello-world-0.1.0.tar.gz 83%
+ - Uploading hello-world-0.1.0.tar.gz 100%
+ - Uploading hello-world-0.1.0.tar.gz 100%
 ```
 
 ## License
